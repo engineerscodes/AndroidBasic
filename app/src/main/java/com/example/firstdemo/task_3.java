@@ -28,7 +28,7 @@ public class task_3 extends AppCompatActivity {
                                 Toast.makeText(task_3.this,checkBoxs[finalI].getText().toString()+" CHECKED ",Toast.LENGTH_SHORT).show();
                             }
                             else{
-                                Toast.makeText(task_3.this," UN-CHECKED ",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(task_3.this,checkBoxs[finalI].getText().toString()+" UN-CHECKED ",Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
