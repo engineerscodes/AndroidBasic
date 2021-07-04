@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".task_3">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/movies"
+        >
+
+        <CheckBox
+
+            android:id="@+id/marvel"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:checked="true"
+            android:cursorVisible="true"
+            android:text="MARVEL "
+            android:textColor="#FF3D00"
+            android:textColorHint="#45031A"
+            android:textColorLink="#007CFF" />
+        <!--android:layout_width="100dp"
+             android:layout_height="50dp" -->
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="LOKI "
+            android:layout_toRightOf="@+id/marvel"
+            android:layout_centerVertical="true"
+            android:id="@+id/loki"
+            android:layout_marginLeft="15dp"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="JOKER DC"
+            android:layout_toRightOf="@+id/loki"
+            android:layout_centerVertical="true"
+            android:id="@+id/joker"
+            android:layout_marginLeft="15dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/movies"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:id="@+id/gender"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:text="MALE "
+            android:padding="5dp"
+            android:textColor="#FB6502"
+            android:id="@+id/male"
+            android:layout_marginLeft="15dp"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:text="FEMALE "
+            android:padding="5dp"
+            android:textColor="#FB6502"
+            android:layout_toRightOf="@+id/male"
+            android:id="@+id/female"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/gender"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:id="@+id/group_gender"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="GROUPED RADIO BUTTON"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/gen_dis"
+
+            />
+          <RadioGroup
+              android:layout_width="wrap_content"
+              android:layout_height="70dp"
+              android:layout_below="@+id/gen_dis"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:orientation="horizontal"
+              >
+              <RadioButton
+                  android:layout_width="wrap_content"
+                  android:layout_height="50dp"
+                  android:text="MALE "
+                  android:padding="5dp"
+                  android:textColor="#1900FF"
+                  android:id="@+id/g_male"
+                  android:layout_marginLeft="15dp"
+                  android:layout_gravity="center"
+                  android:checked="true"
+
+                  />
+              <RadioButton
+                  android:layout_width="wrap_content"
+                  android:layout_height="50dp"
+                  android:text="FEMALE "
+                  android:padding="5dp"
+                  android:textColor="#1900FF"
+                  android:id="@+id/g_female"
+                  android:layout_marginLeft="15dp"
+                  android:layout_toRightOf="@+id/g_male"
+                  android:layout_gravity="center"
+                  android:layout_marginRight="15dp"
+
+                  />
+          </RadioGroup>
+
+    </RelativeLayout>
+
+</RelativeLayout>
