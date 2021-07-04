@@ -71,6 +71,7 @@
             android:textColor="#FB6502"
             android:id="@+id/male"
             android:layout_marginLeft="15dp"
+            android:checked="true"
 
             />
         <RadioButton
