@@ -51,6 +51,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(task3);
             }
         });
+
+        Button task4_LinearLayout=findViewById(R.id.button5);
+
+        task4_LinearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent task4=new Intent(MainActivity.this,task_4.class);
+                startActivity(task4);
+            }
+        });
     }
 
     @Override

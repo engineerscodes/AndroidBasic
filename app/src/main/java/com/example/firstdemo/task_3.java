@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class task_3 extends AppCompatActivity {
@@ -17,7 +19,7 @@ public class task_3 extends AppCompatActivity {
         setContentView(R.layout.activity_task_3);
 
         final CheckBox checkBoxs[]=new CheckBox[3];
-        int chechBoxes_id[]={R.id.marvel,R.id.loki,R.id.joker};
+        final int chechBoxes_id[]={R.id.marvel,R.id.loki,R.id.joker};
 
 
         for( int i=0;i<checkBoxs.length;i++) {
@@ -81,6 +83,25 @@ public class task_3 extends AppCompatActivity {
         }
 
 
+        RadioGroup rg=findViewById(R.id.genders);
+
+        rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if(checkedId ==R.id.g_male) {
+                    Toast.makeText(task_3.this, "MALE SELECTED !", Toast.LENGTH_SHORT).show();
+                     findViewById(R.id.prg).setVisibility(View.VISIBLE);
+                     findViewById(R.id.prg2).setVisibility(View.GONE);
+                }
+                if (checkedId == R.id.g_female) {
+                    Toast.makeText(task_3.this,"FE-MALE SELECTED !",Toast.LENGTH_SHORT).show();
+                    findViewById(R.id.prg).setVisibility(View.GONE);
+                    ProgressBar pg=findViewById(R.id.prg2);
+                    pg.incrementProgressBy(10);
+                    pg.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
 
 

@@ -118,6 +118,7 @@
               android:layout_centerHorizontal="true"
               android:layout_centerVertical="true"
               android:orientation="horizontal"
+              android:id="@+id/genders"
               >
               <RadioButton
                   android:layout_width="wrap_content"
@@ -145,6 +146,34 @@
 
                   />
           </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/group_gender"
+        >
+       <ProgressBar
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:visibility="gone"
+           android:id="@+id/prg"
+           />
+        <ProgressBar
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:id="@+id/prg2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progress="10"
+            android:layout_below="@+id/prg"
+            />
+
 
     </RelativeLayout>
 
