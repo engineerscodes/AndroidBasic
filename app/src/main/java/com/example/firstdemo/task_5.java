@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -49,8 +50,31 @@ public class task_5 extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(task_5.this,arr.get(position)+ "Selected !",Toast.LENGTH_SHORT).show();
+                Toast.makeText(task_5.this,arr.get(position).toUpperCase()+ " Selected !".toUpperCase(),Toast.LENGTH_SHORT).show();
             }
         });
+
+        Spinner Cities=findViewById(R.id.cites);
+        String namesC[]={"RCB","CSK","KKR","MI","DC","KXIP","GL","KLB","SRH","RR"};
+        final ArrayList<String> citeName=new ArrayList<String>();
+        for(int i=0;i<namesC.length;i++)
+        {
+            citeName.add(namesC[i]);
+        }
+
+        ArrayAdapter<String> CAP=new ArrayAdapter<>(this,android.R.layout.simple_spinner_item,citeName);
+        Cities.setAdapter(CAP);
+        Cities.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(task_5.this,citeName.get(position).toUpperCase(),Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
     }
 }
