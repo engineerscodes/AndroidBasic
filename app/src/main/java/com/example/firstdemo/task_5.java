@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -54,7 +55,7 @@ public class task_5 extends AppCompatActivity {
             }
         });
 
-        Spinner Cities=findViewById(R.id.cites);
+        final Spinner Cities=findViewById(R.id.cites);
         String namesC[]={"RCB","CSK","KKR","MI","DC","KXIP","GL","KLB","SRH","RR"};
         final ArrayList<String> citeName=new ArrayList<String>();
         for(int i=0;i<namesC.length;i++)
@@ -67,7 +68,9 @@ public class task_5 extends AppCompatActivity {
         Cities.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(task_5.this,citeName.get(position).toUpperCase(),Toast.LENGTH_SHORT).show();
+               // Toast.makeText(task_5.this,citeName.get(position).toUpperCase(),Toast.LENGTH_SHORT).show();
+                //or
+                Toast.makeText(task_5.this,Cities.getSelectedItem().toString().toUpperCase(),Toast.LENGTH_SHORT).show();
             }
 
             @Override
