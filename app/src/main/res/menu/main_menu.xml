@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:title="NAME"
+    android:id="@+id/namesList"
+    android:icon="@drawable/book"
+    app:showAsAction="always"
+    />
+    <item
+        android:title="CLASS"
+        android:id="@+id/classids"
+        android:icon="@drawable/classart"
+        app:showAsAction="always"/>
+</menu>
