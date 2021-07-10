@@ -6,12 +6,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/naveenappicon"
         android:label="ANDROID L1"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/naveenappicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".task_5"></activity>
+        <activity android:name=".task_7"></activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".task_6" />
+        <activity android:name=".task_5" />
         <activity android:name=".task_4" />
         <activity android:name=".task_3" />
         <activity
