@@ -31,4 +31,6 @@
         android:layout_marginBottom="-79dp"
         android:text="Button" />
 
+      <include layout="@layout/logofile"/>
+
 </RelativeLayout>

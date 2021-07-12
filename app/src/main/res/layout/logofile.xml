@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/naveenappicon"
+        android:layout_centerVertical="true"
+        android:id="@+id/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:text=" INCLUDED FROM OTHER XML FILE"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:padding="10dp"
+        >
+
+    </TextView>
+
+</RelativeLayout>

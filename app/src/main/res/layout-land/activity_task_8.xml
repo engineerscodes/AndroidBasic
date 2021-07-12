@@ -15,7 +15,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-smallcaps"
         android:inputType="textPersonName"
-        android:text=" portrait "
+        android:text="landscape "
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="154dp"
         android:layout_centerInParent="true"
