@@ -26,9 +26,11 @@
         android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/p"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-79dp"
-        android:text="Button" />
-
+        android:layout_below="@+id/p"
+        android:layout_marginTop="-27dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="107dp"
+        android:layout_toStartOf="@+id/p"
+        android:text="Button"
+        />
 </RelativeLayout>
