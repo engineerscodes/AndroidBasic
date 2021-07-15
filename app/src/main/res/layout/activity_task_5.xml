@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".task_5"
-    android:background="#DF67B3"
+    android:background="#EAE4E4"
     >
      <Spinner
          android:layout_width="wrap_content"
