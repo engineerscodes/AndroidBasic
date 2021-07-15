@@ -10,13 +10,10 @@
         android:label="ANDROID L1"
         android:roundIcon="@mipmap/naveenappicon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <activity android:name=".task_9"></activity>
         <activity android:name=".task_8" />
         <activity android:name=".task_7" />
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
         <activity android:name=".task_6" />
         <activity android:name=".task_5" />
         <activity android:name=".task_4" />
